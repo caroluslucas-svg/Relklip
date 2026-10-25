@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RelKlip – Footage Kereta untuk Railfans</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav><div class="wrap"><img src="images/logo.png" alt="LCX Studio" style="height:34px;vertical-align:middle"> <span style="display:inline-block;vertical-align:middle;margin-left:8px;font-size:11px;font-weight:700;color:#1a1a1a;background:#ffa733;padding:2px 8px;border-radius:999px;letter-spacing:.3px">Versi 1.5</span>
+<div class="links"><a href="#katalog">Katalog</a><a href="#request">Request Footage</a><a href="#cara">Cara Pesan</a><a href="#faq">FAQ</a></div></div></nav>
+
+<header class="hero"><div class="wrap">
+<h1>Koleksi video kereta lengkap, <em>tanpa harus hunting sendiri.</em></h1>
+<p>Kami yang berburu momen di lintasan dan stasiun. Kamu tinggal pilih footage dari katalog, atau minta rekaman khusus sesuai kereta incaranmu.</p>
+<a class="btn" href="#katalog">Lihat Katalog</a><a class="btn ghost" href="#request">Request Footage</a>
+<div class="stats"><div><b id="sKlip">0</b>klip tersedia</div><div><b>16:9 / 9:16</b>ukuran lensa pilihan</div><div><b>Diskon</b>beli banyak lebih hemat</div></div>
+<div class="track"><div class="train"><i></i><i></i><i></i><i></i></div><div class="rail"></div><div class="ties"></div></div>
+</div></header>
+
+<section id="katalog"><div class="wrap">
+<h2>Katalog footage</h2><p class="sub">Cari, filter, lalu tambahkan ke keranjang. Pesanan dikirim lewat WhatsApp.</p>
+<div class="tools"><input id="q" type="search" placeholder="Cari judul klip…"><select id="urut"><option value="baru">Terbaru</option><option value="murah">Termurah</option><option value="mahal">Termahal</option></select></div>
+<div class="chips" id="chips"></div>
+<div class="grid" id="grid"></div>
+<p class="tip">Beli 3 klip diskon 10%, beli 5 klip diskon 15%. Setiap klip Rp2.000.</p>
+</div></section>
+
+<section id="request" style="background:var(--alt)"><div class="wrap">
+<h2>Request footage khusus</h2><p class="sub">Tidak ada di katalog? Sebutkan kereta incaranmu, kami usahakan berburu.</p>
+<div class="two">
+<form class="card" id="fReq" novalidate>
+<label for="nama">Nama</label><input class="f" id="nama" placeholder="Nama kamu"><div class="err" id="eNama"></div>
+<label for="kereta">Kereta atau lokomotif incaran</label><input class="f" id="kereta" placeholder="Contoh: lokomotif tertentu, KA tertentu"><div class="err" id="eKereta"></div>
+
+<label for="shot">Jenis footage</label><select class="f" id="shot"></select>
+<label for="res">Ukuran lensa (rasio)</label><select class="f" id="res"></select>
+<label class="chk"><input type="checkbox" id="cepat"> Pengerjaan cepat (maksimal 3 hari)</label>
+<label for="cat">Catatan</label><textarea class="f" id="cat" rows="3" placeholder="Jam yang diinginkan, sudut pandang, dll."></textarea>
+<button class="btn" type="submit" style="margin-top:12px">Kirim Request via WhatsApp</button>
+</form>
+<div class="est"><div>Estimasi biaya</div><div class="big" id="rTotal">Rp0</div><ul id="rRinci"></ul><div class="tip" style="color:#b5c0d6">Estimasi awal. Harga final dikonfirmasi lewat WhatsApp karena tergantung jadwal dan kesulitan lokasi.</div></div>
+</div></div></section>
+
+<section id="cara"><div class="wrap">
+<h2>Cara pesan</h2><p class="sub">Tiga langkah, tanpa ribet.</p>
+<div class="grid">
+<div class="card step"><b>1</b><h3>Pilih atau request</h3><p>Ambil dari katalog atau kirim request footage khusus.</p></div>
+<div class="card step"><b>2</b><h3>Konfirmasi via WhatsApp</h3><p>Pesananmu terkirim otomatis lengkap dengan rinciannya.</p></div>
+<div class="card step"><b>3</b><h3>Terima footage</h3><p>Setelah pembayaran, file dikirim lewat tautan unduhan.</p></div>
+</div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+<h2>Pertanyaan umum</h2><p class="sub">&nbsp;</p>
+<details><summary>Footage dipakai untuk apa saja?</summary><p>Untuk koleksi pribadi dan konten non-komersial. Untuk keperluan lain, tanyakan dulu lewat WhatsApp.</p></details>
+<details><summary>Bagaimana kalau kereta yang diminta tidak lewat?</summary><p>Kami kabari lewat WhatsApp dan jadwal bisa diubah. Tidak ada biaya untuk rekaman yang tidak jadi.</p></details>
+<details><summary>Dikirim dalam bentuk apa?</summary><p>Tautan unduhan (misalnya Google Drive) dengan format MP4.</p></details>
+<details><summary>Bisa minta diedit sekalian?</summary><p>Bisa. Tulis di catatan, misalnya potongan pendek, musik, atau subtitle.</p></details>
+</div></section>
+
+<div class="cartbar" id="bar"><div class="in"><div><small id="bInfo">0 klip</small><span class="tot" id="bTot">Rp0</span></div><button class="btn" id="bSend" type="button">Pesan via WhatsApp</button></div></div>
+<footer>© 2026 RelKlip · Dibuat dengan HTML, CSS, dan JavaScript 🚆</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
